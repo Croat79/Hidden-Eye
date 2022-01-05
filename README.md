@@ -1,9 +1,7 @@
 <p align="center">
       Modern Phishing Tool With Advanced Functionality
 </p>
-<p align="center">
-     PHISHING | KEYLOGGER | INFORMATION_COLLECTOR | ALL_IN_ONE_TOOL | SOCIALENGINEERING
-</p>
+
 
 <p align="center">
   <a href="https://github.com/muhammadqazi"><img title="Open Source Love" src="https://badges.frapsoft.com/os/v2/open-source.png?v=103" ></a>
