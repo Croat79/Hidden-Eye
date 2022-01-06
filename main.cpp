@@ -8,14 +8,15 @@ using namespace std;
 
 void show_progress_bar(int time, const std::string &message, char symbol);
 int Validator(int option, int startLimit, int endLimit);
+void Facebook(int option, bool validate);
 int main()
 {
 
     int option;
     bool validate = true;
 
-    // show_progress_bar(100, "Loading Modules ...", '#');
-
+    show_progress_bar(100, "Loading Hidden-Eye ...", '#');
+    system("clear");
     do
     {
         std::cout << "\033[1;31m"
@@ -49,7 +50,7 @@ int main()
                   << "\033[1;31m"
                   << "\t\t[ "
                   << "\033[1;37m"
-                  << "github.com/muhammadqazi"
+                  << "https://github.com/muhammadqazi"
                   << "\033[1;31m"
                   << " ]\n\n";
 
@@ -403,7 +404,7 @@ int main()
 
         std::cout << "\033[1;31m"
                   << "Additional Tools:\n\n";
-
+        // 34) Location
         std::cout << "\033[1;31m"
                   << "["
                   << "\033[1;37m"
@@ -413,12 +414,11 @@ int main()
                   << "\033[1;37m"
                   << " Get Target Location\n\n";
 
-        //get user input
         if (!validate)
         {
-            cout << "\033[1;31m"
-                    "Enter the correct option\n"
-                 << endl;
+            std::cout << "\033[1;31m"
+                         "Enter the correct option\n"
+                      << endl;
         }
 
         std::cout << "\033[1;31m"
@@ -428,9 +428,15 @@ int main()
 
         validate = Validator(option, 1, 34);
 
-        if(validate){
-            //clear screen
+        if (validate)
+        {
             system("clear");
+
+            //1) Facebook
+            if (option == 1)
+            {
+                Facebook(option, validate);
+            }
         }
 
     } while (!validate);
@@ -467,4 +473,197 @@ void show_progress_bar(int time, const std::string &message, char symbol)
         std::this_thread::sleep_for(std::chrono::milliseconds(time));
     }
     std::cout << "\n\n";
+}
+void Facebook(int option, bool validate)
+{
+    std::cout << "\033[1;31m"
+              << "["
+              << "\033[1;37m"
+              << " *"
+              << "\033[1;31m"
+              << " ]"
+              << "\033[1;37m"
+              << " Facebook Phishing is loaded\n\n";
+
+    std::cout << "\033[1;31m"
+              << "["
+              << "\033[1;37m"
+              << " *"
+              << "\033[1;31m"
+              << " ]"
+              << "\033[1;37m"
+              << " Select Mode\n\n";
+
+    std::cout << "\033[1;31m"
+              << "--------------------------------------------------------------------------------------------------\n\n";
+
+    std::cout << "\033[1;31m"
+              << "Operation Mode:\n\n";
+    do
+    {
+        //1) Standard
+        std::cout << "\n\033[1;31m"
+                  << "["
+                  << "\033[1;37m"
+                  << " 01"
+                  << "\033[1;31m"
+                  << " ]"
+                  << "\033[1;37m"
+                  << " Standard Phising Page\t\t";
+        //2) Fake Security
+        std::cout << "\033[1;31m"
+                  << "["
+                  << "\033[1;37m"
+                  << " 02"
+                  << "\033[1;31m"
+                  << " ]"
+                  << "\033[1;37m"
+                  << " Fake Security\n\n";
+        //3) Poll Ranking
+        std::cout << "\033[1;31m"
+                  << "["
+                  << "\033[1;37m"
+                  << " 03"
+                  << "\033[1;31m"
+                  << " ]"
+                  << "\033[1;37m"
+                  << " Poll Ranking Method\t\t";
+        //4) Poll Mesenger Credentials
+        std::cout << "\033[1;31m"
+                  << "["
+                  << "\033[1;37m"
+                  << " 04"
+                  << "\033[1;31m"
+                  << " ]"
+                  << "\033[1;37m"
+                  << " Poll Messenger Credentials\n\n";
+
+        if (!validate)
+        {
+            std::cout << "\033[1;31m"
+                         "Enter the correct option\n\n"
+                      << endl;
+        }
+
+        std::cout << "\033[1;31m"
+                  << "HiddenEye >> "
+                  << "\033[1;37m";
+        std::cin >> option;
+
+        validate = Validator(option, 1, 4);
+
+        if (validate)
+        {
+            system("clear");
+
+            //1) Standard Phising Page
+            if (option == 1)
+            {
+                std::cout << "\033[1;31m"
+                          << R"(
+ _  _  __  ____  ____  ____  __ _       ____  _  _  ____ 
+/ )( \(  )(    \(    \(  __)(  ( \     (  __)( \/ )(  __)
+) __ ( )(  ) D ( ) D ( ) _) /    /      ) _)  )  /  ) _)    by Muhammad Qazi
+\_)(_/(__)(____/(____/(____)\_)__)     (____)(__/  (____)
+
+                          https://github.com/muhammadqazi
+            )" << endl;
+
+                std::cout << "\n\033[1;31m"
+                          << "[ "
+                          << "\033[1;34m"
+                          << "Prompt : Chose Features you would like to chose"
+                          << "\033[1;31m"
+                          << " ]\n\n";
+
+                std::cout << "\033[1;31m"
+                          << "--------------------------------------------------------------------------------------------------\n\n";
+                std::cout << "\033[1;31m"
+                          << "Operation Mode:\n\n";
+                do
+                {
+                    //1) Keylogger
+                    std::cout << "\n\033[1;31m"
+                              << "["
+                              << "\033[1;37m"
+                              << " 01"
+                              << "\033[1;31m"
+                              << " ]"
+                              << "\033[1;37m"
+                              << " Keylogger\n\n";
+                    //2) Fake CloudFare Protection Page
+                    std::cout << "\033[1;31m"
+                              << "["
+                              << "\033[1;37m"
+                              << " 02"
+                              << "\033[1;31m"
+                              << " ]"
+                              << "\033[1;37m"
+                              << " Fake CloudFare Protection Page\n\n";
+                    //3) Capture Data Email
+                    std::cout << "\033[1;31m"
+                              << "["
+                              << "\033[1;37m"
+                              << " 03"
+                              << "\033[1;31m"
+                              << " ]"
+                              << "\033[1;37m"
+                              << " Capture Data Email\n\n";
+
+                    if (!validate)
+                    {
+                        std::cout << "\033[1;31m"
+                                     "Enter the correct option\n\n"
+                                  << endl;
+                    }
+
+                    std::cout << "\033[1;31m"
+                              << "HiddenEye >> "
+                              << "\033[1;37m";
+                    std::cin >> option;
+
+                    validate = Validator(option, 1, 3);
+
+                    if (validate)
+                    {
+                        system("clear");
+
+                        //1) Keylogger
+                        if (option == 1)
+                        {
+                            std::cout << option;
+                        }
+                        //2) Fake CloudFare Protection Page
+                        else if (option == 2)
+                        {
+                            show_progress_bar(100, "Loading Fake CloudFare Modules ...", '*');
+
+                        }
+                        //3) Capture Data Email
+                        else if (option == 3)
+                        {
+                            std::cout << option;
+                        }
+                    }
+
+                } while (!validate);
+            }
+            //2) Fake Security
+            else if (option == 2)
+            {
+                std::cout << option;
+            }
+            //3) Poll Ranking
+            else if (option == 3)
+            {
+                std::cout << option;
+            }
+            //4) Poll Mesenger Credentials
+            else if (option == 4)
+            {
+                std::cout << option;
+            }
+        }
+
+    } while (!validate);
 }
