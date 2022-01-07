@@ -442,6 +442,167 @@ int main()
             {
                 Facebook(option, validate);
             }
+            //2) Google
+            if (option == 2)
+            {
+                Facebook(option, validate);
+            }
+            //3) Linkedin
+            else if (option == 3)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //4) Github
+            else if (option == 4)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //5) StackOverflow
+            else if (option == 5)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //6) Wordpress
+            else if (option == 6)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //7) Instagram
+            else if (option == 7)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //8) Twitter
+            else if (option == 8)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //9) Snapchat
+            else if (option == 9)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //10) Yahoo
+            else if (option == 10)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //11) Twitch
+            else if (option == 11)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //12) Microsoft
+            else if (option == 12)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //13) Steam
+            else if (option == 13)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //14) iCloud
+            else if (option == 14)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //15) Gitlab
+            else if (option == 15)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //16) Netflix
+            else if (option == 16)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //17) Pinterest
+            else if (option == 17)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //18) Origin
+            else if (option == 18)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //19) ProtonMail
+            else if (option == 19)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //20) Spotify
+            else if (option == 20)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //21) Quora
+            else if (option == 21)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //22) Adobe
+            else if (option == 22)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //23) CryptoCurrency
+            else if (option == 23)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //24) DebianArt
+            else if (option == 24)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //25) DropBox
+            else if (option == 25)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //26) eBay
+            else if (option == 26)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //27) Paypal
+            else if (option == 27)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //28) Spotify
+            else if (option == 28)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //29) Verizon
+            else if (option == 29)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //30) Reddit
+            else if (option == 30)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //31) PlayStation
+            else if (option == 31)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //32) Xbox
+            else if (option == 32)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //33) Custom
+            else if (option == 33)
+            {
+                Features_choice_menu(option, validate);
+            }
+            //34) Get Location
             else if (option == 34)
             {
                 GetLocation(option, validate);
@@ -568,6 +729,7 @@ void Facebook(int option, bool validate)
             //1) Standard Phising Page
             if (option == 1)
             {
+
                 Hidden_eye("Prompt : Chose Features you would like to chose");
 
                 std::cout << "\033[1;31m"
@@ -734,8 +896,11 @@ void GetLocation(int option, bool validate)
                           << " *"
                           << "\033[1;31m"
                           << " ]"
-                          
-                          <<"\033[1;31m" <<" Tip :"<< "\033[1;37m"<<" Use Google Drive File URL as custom URL while asked\n"
+
+                          << "\033[1;31m"
+                          << " Tip :"
+                          << "\033[1;37m"
+                          << " Use Google Drive File URL as custom URL while asked\n"
                           << std::endl;
 
                 std::cout << "If you have setup files correctly "
