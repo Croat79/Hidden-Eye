@@ -5,18 +5,59 @@
 #include <chrono>
 #include <cmath>
 #include <stdio.h>
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
+void Hidden_eye_main_menu();
 void show_progress_bar(int time, const std::string &message, char symbol);
 int Validator(int option, int startLimit, int endLimit);
 void Hidden_eye(string prompt);
 void Features_choice_menu(int option, int validate);
 void Facebook(int option, bool validate);
 void GetLocation(int option, bool validate);
+bool agreement();
+
 int main()
 {
 
+    string agree;
+
+    ifstream agreementFile("agreement.txt");
+
+    getline(agreementFile, agree);
+
+    agreementFile.close();
+
+    int int_agree;
+
+    stringstream st_agree;
+    st_agree << agree;
+    st_agree >> int_agree;
+
+    if (int_agree == 0)
+    {
+        bool accept = agreement();
+
+        if (accept)
+        {
+            Hidden_eye_main_menu();
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    else
+    {
+        Hidden_eye_main_menu();
+    }
+
+    return 0;
+}
+void Hidden_eye_main_menu()
+{
     int option;
     bool validate = true;
 
@@ -610,8 +651,6 @@ int main()
         }
 
     } while (!validate);
-
-    return 0;
 }
 int Validator(int option, int startLimit, int endLimit)
 {
@@ -917,7 +956,6 @@ void GetLocation(int option, bool validate)
 
     } while (!validate);
 }
-
 void Features_choice_menu(int option, int validate)
 {
     do
@@ -1208,7 +1246,72 @@ void Features_choice_menu(int option, int validate)
 
     } while (!validate);
 }
+bool agreement()
+{
+    std::cout << "\033[1;31m"
+              << R"(
 
+ ██░ ██  ██ ▓█████▄ ▓█████▄ ▓█████  ███▄    █    ▓█████ ██   ██ ▓█████ 
+▓██░ ██ ▓██ ▒██▀ ██▌▒██▀ ██▌▓█   ▀  ██ ▀█   █    ▓█   ▀ ▒██  ██ ▓█   ▀ 
+▒██▀▀██ ▒██ ░██   █▌░██   █▌▒███   ▓██  ▀█ ██▒   ▒███    ▒██ ██ ▒███   
+░▓█ ░██ ░██ ░▓█▄   ▌░▓█▄   ▌▒▓█  ▄ ▓██▒  ▐▌██▒   ▒▓█  ▄  ░ ▐██▓▒▓█  ▄ 
+░▓█▒░██▓ ██ ░▒████▓ ░▒████▓ ░▒████▒▒██░   ▓██░   ░▒████▒ ░ ██▒▓░░▒████▒
+ ▒ ░░▒░▒░▓   ▒▒▓  ▒  ▒▒▓  ▒ ░░ ▒░ ░░ ▒░   ▒ ▒    ░░ ▒░ ░  ██▒▒▒ ░░ ▒░ ░
+ ▒ ░▒░ ░ ▒ ░ ░ ▒  ▒  ░ ▒  ▒  ░ ░  ░░ ░░   ░ ▒░    ░ ░  ░▓██ ░▒░  ░ ░  ░
+ ░  ░░ ░ ▒ ░ ░ ░  ░  ░ ░  ░    ░      ░   ░ ░       ░   ▒ ▒ ░░     ░   
+ ░  ░  ░ ░     ░       ░       ░  ░         ░       ░  ░░ ░        ░  ░
+             ░       ░                                  ░ ░            
+       
+)";
+
+    std::cout << "\n\033[1;31m"
+              << "\t\t\t\t[ "
+              << "\033[1;37m"
+              << "DISCLAIMER AND USER AGREEMENT"
+              << "\033[1;31m"
+              << " ]\n\n";
+
+    std::cout << "\033[1;37m"
+              << "The use of the HiddenEye & its resources/phishing-pages is "
+              << "\033[1;31m"
+              << "COMPLETE RESPONSIBILITY"
+              << "\033[1;37m"
+              << " of the END-USER. \nDevelopers assume NO liability and are NOT responsible for any misuse or damage caused by this program. \nAlso we inform you that some of your your actions may be"
+              << "\033[1;31m"
+              << " ILLEGAL"
+              << "\033[1;37m"
+              << " and you "
+              << "\033[1;31m"
+              << "CAN NOT "
+              << "\033[1;37m"
+              << "use this software to test\nperson or company without "
+              << "\033[1;31m"
+              << "WRITTEN PERMISSION "
+              << "\033[1;37m"
+              << "from them.\n\n";
+
+    // agreement
+    std::cout << "\033[1;31m"
+              << "By typing Yes you agree with the terms and conditions and you taking the responsibility of any damage made by the action using this tool.\n";
+
+    std::cout << "\033[1;31m"
+              << "\nType" << "\033[1;32m" << " Y "<< "\033[1;31m"<<" to continue and " << "\033[1;32m" << " N "<< "\033[1;31m"<<"to exit the program\n";
+    char answer;
+    std::cout << "\033[1;37m"
+              << "\nContinue: ";
+    std::cin >> answer;
+    if (answer == 'Y' || answer == 'y')
+    {
+        ofstream myfile;
+        myfile.open("agreement.txt");
+        myfile << 1;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 void Hidden_eye(string prompt)
 {
     system("clear");
