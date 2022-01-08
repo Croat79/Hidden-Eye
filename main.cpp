@@ -18,7 +18,7 @@ void Features_choice_menu(int option, int validate);
 void Facebook(int option, bool validate);
 void GetLocation(int option, bool validate);
 bool agreement();
-
+ 
 int main()
 {
 
