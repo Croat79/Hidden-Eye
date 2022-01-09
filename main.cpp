@@ -18,7 +18,7 @@ void Features_choice_menu(int option, int validate);
 void Facebook(int option, bool validate);
 void GetLocation(int option, bool validate);
 bool agreement();
- 
+
 int main()
 {
 
@@ -468,8 +468,19 @@ void Hidden_eye_main_menu()
         }
 
         std::cout << "\033[1;31m"
-                  << "HiddenEye >> "
-                  << "\033[1;37m";
+                  << "┌─[ "
+                  << "\033[1;32m"
+                  << "HIDDEN-EYE"
+                  << "\033[1;34m"
+                  << "~"
+                  << "\033[1;37m"
+                  << "@HOME "
+                  << "\033[1;31m"
+                  << "]"
+                  << "\n└──╼"
+                  << "\033[1;37m"
+                  << "$ ";
+
         std::cin >> option;
 
         validate = Validator(option, 1, 34);
@@ -755,8 +766,23 @@ void Facebook(int option, bool validate)
         }
 
         std::cout << "\033[1;31m"
-                  << "HiddenEye >> "
-                  << "\033[1;37m";
+                  << "┌─[ "
+                  << "\033[1;32m"
+                  << "HIDDEN-EYE"
+                  << "\033[1;34m"
+                  << "~"
+                  << "\033[1;37m"
+                  << "@HOME"
+                  << "\033[1;31m"
+                  << "/"
+                  << "\033[1;34m"
+                  << "TEMPLATE"
+                  << "\033[1;31m"
+                  << "]"
+                  << "\n└──╼"
+                  << "\033[1;37m"
+                  << "$ ";
+
         std::cin >> option;
 
         validate = Validator(option, 1, 4);
@@ -851,8 +877,19 @@ void GetLocation(int option, bool validate)
         }
 
         std::cout << "\033[1;31m"
-                  << "HiddenEye >> "
-                  << "\033[1;37m";
+                  << "┌─[ "
+                  << "\033[1;32m"
+                  << "HIDDEN-EYE"
+                  << "\033[1;34m"
+                  << "~"
+                  << "\033[1;37m"
+                  << "@HOME "
+                  << "\033[1;31m"
+                  << "]"
+                  << "\n└──╼"
+                  << "\033[1;37m"
+                  << "$ ";
+
         std::cin >> option;
 
         validate = Validator(option, 1, 2);
@@ -996,8 +1033,27 @@ void Features_choice_menu(int option, int validate)
         }
 
         std::cout << "\033[1;31m"
-                  << "HiddenEye >> "
-                  << "\033[1;37m";
+                  << "┌─[ "
+                  << "\033[1;32m"
+                  << "HIDDEN-EYE"
+                  << "\033[1;34m"
+                  << "~"
+                  << "\033[1;37m"
+                  << "@HOME"
+                  << "\033[1;31m"
+                  << "/"
+                  << "\033[1;34m"
+                  << "TEMPLATE"
+                  << "\033[1;31m"
+                  << "/"
+                  << "\033[1;34m"
+                  << "FEATURE"
+                  << "\033[1;31m"
+                  << "]"
+                  << "\n└──╼"
+                  << "\033[1;37m"
+                  << "$ ";
+
         std::cin >> option;
 
         validate = Validator(option, 1, 3);
@@ -1162,8 +1218,31 @@ void Features_choice_menu(int option, int validate)
                     }
 
                     std::cout << "\033[1;31m"
-                              << "HiddenEye >> "
-                              << "\033[1;37m";
+                              << "┌─[ "
+                              << "\033[1;32m"
+                              << "HIDDEN-EYE"
+                              << "\033[1;34m"
+                              << "~"
+                              << "\033[1;37m"
+                              << "@HOME"
+                              << "\033[1;31m"
+                              << "/"
+                              << "\033[1;34m"
+                              << "TEMPLATE"
+                              << "\033[1;31m"
+                              << "/"
+                              << "\033[1;34m"
+                              << "FEATURE"
+                              << "\033[1;31m"
+                              << "/"
+                              << "\033[1;34m"
+                              << "SERVER"
+                              << "\033[1;31m"
+                              << "]"
+                              << "\n└──╼"
+                              << "\033[1;37m"
+                              << "$ ";
+
                     std::cin >> option;
 
                     validate = Validator(option, 1, 7);
@@ -1295,7 +1374,15 @@ bool agreement()
               << "By typing Yes you agree with the terms and conditions and you taking the responsibility of any damage made by the action using this tool.\n";
 
     std::cout << "\033[1;31m"
-              << "\nType" << "\033[1;32m" << " Y "<< "\033[1;31m"<<" to continue and " << "\033[1;32m" << " N "<< "\033[1;31m"<<"to exit the program\n";
+              << "\nType"
+              << "\033[1;32m"
+              << " Y "
+              << "\033[1;31m"
+              << " to continue and "
+              << "\033[1;32m"
+              << " N "
+              << "\033[1;31m"
+              << "to exit the program\n";
     char answer;
     std::cout << "\033[1;37m"
               << "\nContinue: ";
