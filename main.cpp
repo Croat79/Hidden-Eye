@@ -460,6 +460,14 @@ void Hidden_eye_main_menu()
                   << "\033[1;37m"
                   << " Get Target Location\n\n";
 
+        // 35) Exit
+        std::cout << "\033[1;31m"
+                  << "["
+                  << " 35"
+                  << "\033[1;31m"
+                  << " ]"
+                  << " Exit\n\n";
+
         if (!validate)
         {
             std::cout << "\033[1;31m"
@@ -483,7 +491,7 @@ void Hidden_eye_main_menu()
 
         std::cin >> option;
 
-        validate = Validator(option, 1, 34);
+        validate = Validator(option, 1, 35);
 
         if (validate)
         {
@@ -658,6 +666,11 @@ void Hidden_eye_main_menu()
             else if (option == 34)
             {
                 GetLocation(option, validate);
+            }
+            //35) Exit
+            else if (option == 34)
+            {
+                break;
             }
         }
 
