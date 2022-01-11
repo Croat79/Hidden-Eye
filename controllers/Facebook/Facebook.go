@@ -23,7 +23,7 @@ func Facebook() {
 	)
 
 	fmt.Print(Colors.Red(), "\n\n┌─[ "+Colors.Green()+"HIDDEN-EYE"+Colors.Blue()+"~"+Colors.White()+"@HOME"+Colors.Red()+
-		"/"+Colors.Blue()+"TEMPLATE"+Colors.Red()+" ]"+"\n└──╼ "+Colors.White())
+		"/"+Colors.Blue()+"TEMPLATE"+Colors.Red()+" ]"+"\n└──╼ "+Colors.White()+"$ ")
 
 	option := helpers.Input_User(1, 4)
 
@@ -39,7 +39,7 @@ func Facebook() {
 
 		fmt.Print(Colors.Red(), "\n\n┌─[ "+Colors.Green()+"HIDDEN-EYE"+Colors.Blue()+"~"+Colors.White()+"@HOME"+Colors.Red()+
 			"/"+Colors.Blue()+"TEMPLATE"+
-			"/"+Colors.Blue()+"FEATURES"+Colors.Red()+" ]"+"\n└──╼ "+Colors.White())
+			"/"+Colors.Blue()+"FEATURES"+Colors.Red()+" ]"+"\n└──╼ "+Colors.White()+"$ ")
 
 		option := helpers.Input_User(1, 3)
 
@@ -94,7 +94,7 @@ func Facebook() {
 			fmt.Print(Colors.Red(), "\n\n┌─[ "+Colors.Green()+"HIDDEN-EYE"+Colors.Blue()+"~"+Colors.White()+"@HOME"+Colors.Red()+
 				"/"+Colors.Blue()+"TEMPLATE"+Colors.Red()+
 				"/"+Colors.Blue()+"FEATURES"+Colors.Red()+
-				"/"+Colors.Blue()+"SERVER"+Colors.Red()+" ]"+"\n└──╼ "+Colors.White())
+				"/"+Colors.Blue()+"SERVER"+Colors.Red()+" ]"+"\n└──╼ "+Colors.White()+"$ ")
 
 			option := helpers.Input_User(1, 7)
 
