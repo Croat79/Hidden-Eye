@@ -2,6 +2,7 @@ package CLI
 
 import (
 	Facebook "HiddenEye/controllers/Facebook"
+	Location "HiddenEye/controllers/Location"
 	helpers "HiddenEye/helpers"
 	Colors "HiddenEye/utils"
 	"fmt"
@@ -100,5 +101,7 @@ func Hidden_Eye() {
 
 	if option == 1 {
 		Facebook.Facebook()
+	} else if option == 33 {
+		Location.Get_Location()
 	}
 }
