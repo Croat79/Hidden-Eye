@@ -1,13 +1,12 @@
 package main
 
 import (
-	CLI "HiddenEye/CLI"
-	"HiddenEye/helpers"
+	"HiddenEye/CLI"
 )
 
 func main() {
 
-	helpers.Loading()
+	// helpers.Loading()
 
 	CLI.Hidden_Eye()
 

