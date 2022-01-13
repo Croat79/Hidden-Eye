@@ -1,0 +1,13 @@
+gongrok | 2022_13_01__12_57_40 | > Logger Init...
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v3.3.10-dev
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:8080
+gongrok | 2022_13_01__12_57_40 | > 
+GONGROK CLIENT: http://localhost:8080/client

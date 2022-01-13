@@ -1,0 +1,44 @@
+gongrok | 2022_13_01__13_08_35 | > Logger Init...
+gongrok | 2022_13_01__13_08_35 | > port: 1234 protocol: 0 host: localhost tunnelname: HiddenEye
+gongrok | 2022_13_01__13_08_35 | > New client
+gongrok | 2022_13_01__13_08_35 | > Start server
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:35+0200 lvl=info msg="no configuration paths supplied"
+t=2022-01-13T13:08:35+0200 lvl=info msg="using configuration at default config path" path=/home/muhammad/.ngrok2/ngrok.yml
+t=2022-01-13T13:08:35+0200 lvl=info msg="open config file" 
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: path=/home/muhammad/.ngrok2/ngrok.yml err=nil
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:35+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+gongrok | 2022_13_01__13_08_35 | > server client ready
+gongrok | 2022_13_01__13_08_35 | > Add tunnel
+gongrok | 2022_13_01__13_08_35 | > Connecting
+gongrok | 2022_13_01__13_08_35 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_08_35 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:36+0200 lvl=info msg=start pg=/api/tunnels id=e65aaab513b80fbc
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:36+0200 lvl=warn msg="ngrok is not yet ready to start tunnels" pg=/api/tunnels id=e65aaab513b80fbc err="a successful ngrok tunnel session has not yet been established"
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:36+0200 lvl=info msg=end pg=/api/tunnels id=e65aaab513b80fbc status=503 dur=789.141µs
+gongrok | 2022_13_01__13_08_35 | > failed to init tunnel: HiddenEye | addr: localhost:1234
+gongrok | 2022_13_01__13_08_35 | > error api: {"error_code":104,"status_code":503,"msg":"ngrok is not yet ready to start tunnels","details":{"err":"a successful ngrok tunnel session has not yet been established"}}
+
+gongrok | 2022_13_01__13_08_35 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_08_35 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:37+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-01-13T13:08:37+0200 lvl=info msg="client session established" obj=csess id=52f4b5864315
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:37+0200 lvl=info msg=start pg=/api/tunnels id=c073714da3a8721d
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:38+0200 lvl=info msg="started tunnel" obj=tunnels name=HiddenEye addr=http://localhost:1234 url=https://00e0-212-175-150-127.ngrok.io
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:38+0200 lvl=info msg=end pg=/api/tunnels id=c073714da3a8721d status=201 dur=281.052507ms
+gongrok | 2022_13_01__13_08_35 | > Tunnel Created...
+gongrok | 2022_13_01__13_08_35 | > >>> Name: HiddenEye | Public Addr: https://00e0-212-175-150-127.ngrok.io
+gongrok | 2022_13_01__13_08_35 | > CLIENT CONNECTED: &{ID:bf2e7cee-68fa-4fb1-b742-a42038ce995f Options:0xc00009e240 Tunnels:[0xc00009e1e0] NGROKLocalAddr:127.0.0.1:4040 LogAPI:true cmds:[] runningCMDS:0xc0000c6580}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v3.3.10-dev
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:8080
+gongrok | 2022_13_01__13_08_35 | > 
+GONGROK CLIENT: http://localhost:8080/client
+gongrok | 2022_13_01__13_08_35 | > NGROK LOG: t=2022-01-13T13:08:40+0200 lvl=warn msg="failed to check for update" obj=updater err="Post \"https://update.equinox.io/check\": context deadline exceeded"
+gongrok | 2022_13_01__13_08_35 | > interrupt

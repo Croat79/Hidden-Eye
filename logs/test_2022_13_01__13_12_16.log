@@ -1,0 +1,188 @@
+gongrok | 2022_13_01__13_12_16 | > Logger Init...
+gongrok | 2022_13_01__13_12_16 | > port: 8080 protocol: 0 host: localhost tunnelname: HiddenEye
+gongrok | 2022_13_01__13_12_16 | > New client
+gongrok | 2022_13_01__13_12_16 | > Start server
+gongrok | 2022_13_01__13_12_16 | > NGROK LOG: t=2022-01-13T13:12:16+0200 lvl=info msg="no configuration paths supplied"
+t=2022-01-13T13:12:16+0200 lvl=info msg="using configuration at default config path" path=/home/muhammad/.ngrok2/ngrok.yml
+gongrok | 2022_13_01__13_12_16 | > NGROK LOG: t=2022-01-13T13:12:16+0200 lvl=info msg="open config file" path=/home/muhammad/.ngrok2/ngrok.yml err=nil
+gongrok | 2022_13_01__13_12_16 | > NGROK LOG: t=2022-01-13T13:12:16+0200 lvl=warn msg="can't bind default web address, trying alternatives" obj=web addr=127.0.0.1:4040
+gongrok | 2022_13_01__13_12_16 | > NGROK LOG: t=2022-01-13T13:12:16+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4041
+gongrok | 2022_13_01__13_12_16 | > server client ready
+gongrok | 2022_13_01__13_12_16 | > Add tunnel
+gongrok | 2022_13_01__13_12_16 | > Connecting
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > NGROK LOG: t=2022-01-13T13:12:17+0200 lvl=eror msg="failed to auth" obj=tunnels.session err="Your account is limited to 1 simultaneous ngrok client session.\nActive ngrok client sessions in region 'us':\n  - ts_23dmWGWedVTfve1p7GBfIFKHul6 (212.175.150.127)\r\n\r\nERR
+gongrok | 2022_13_01__13_12_16 | > ngrok session limit reached
+gongrok | 2022_13_01__13_12_16 | > parse ngrok error: ngrok session limit reached
+gongrok | 2022_13_01__13_12_16 | > handleInitNGROK error: ngrok session limit reached
+gongrok | 2022_13_01__13_12_16 | > server err: ngrok session limit reached  (*disregard if EOF*)
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > failed to init tunnel: HiddenEye | addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > Post "http://127.0.0.1:4041/api/tunnels": dial tcp 127.0.0.1:4041: connect: connection refused
+gongrok | 2022_13_01__13_12_16 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_12_16 | > >>>	Name: HiddenEye | Addr: localhost:8080
+gongrok | 2022_13_01__13_12_16 | > interrupt

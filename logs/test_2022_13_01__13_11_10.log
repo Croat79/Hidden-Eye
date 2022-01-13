@@ -1,0 +1,35 @@
+gongrok | 2022_13_01__13_11_10 | > Logger Init...
+gongrok | 2022_13_01__13_11_10 | > port: 1234 protocol: 0 host: localhost tunnelname: HiddenEye
+gongrok | 2022_13_01__13_11_10 | > New client
+gongrok | 2022_13_01__13_11_10 | > Start server
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:10+0200 lvl=info msg="no configuration paths supplied"
+t=2022-01-13T13:11:10+0200 lvl=info msg="using configuration at default config path" path=/home/muhammad/.ngrok2/ngrok.yml
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:10+0200 lvl=info msg="open config file" path=/home/muhammad/.ngrok2/ngrok.yml err=nil
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:10+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+gongrok | 2022_13_01__13_11_10 | > server client ready
+gongrok | 2022_13_01__13_11_10 | > Add tunnel
+gongrok | 2022_13_01__13_11_10 | > Connecting
+gongrok | 2022_13_01__13_11_10 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_11_10 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:11+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:11+0200 lvl=info msg="client session established" obj=csess id=34725ff93961
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:11+0200 lvl=info msg=start pg=/api/tunnels id=476a5a5ad89cab83
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:11+0200 lvl=info msg="started tunnel" obj=tunnels name=HiddenEye addr=http://localhost:1234 url=https://f59a-212-175-150-127.ngrok.io
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:11+0200 lvl=info msg=end pg=/api/tunnels id=476a5a5ad89cab83 status=201 dur=239.802318ms
+gongrok | 2022_13_01__13_11_10 | > Tunnel Created...
+gongrok | 2022_13_01__13_11_10 | > >>> Name: HiddenEye | Public Addr: https://f59a-212-175-150-127.ngrok.io
+gongrok | 2022_13_01__13_11_10 | > CLIENT CONNECTED: &{ID:6dae58ee-6f3f-46dd-aa30-c66604e0a349 Options:0xc000200660 Tunnels:[0xc000200600] NGROKLocalAddr:127.0.0.1:4040 LogAPI:true cmds:[] runningCMDS:0xc000224b00}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v3.3.10-dev
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:8080
+gongrok | 2022_13_01__13_11_10 | > 
+GONGROK CLIENT: http://localhost:8080/client
+gongrok | 2022_13_01__13_11_10 | > interrupt
+gongrok | 2022_13_01__13_11_10 | > NGROK LOG: t=2022-01-13T13:11:32+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"

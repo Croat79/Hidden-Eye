@@ -1,0 +1,72 @@
+gongrok | 2022_13_01__13_11_42 | > Logger Init...
+gongrok | 2022_13_01__13_11_42 | > port: 1234 protocol: 0 host: localhost tunnelname: HiddenEye
+gongrok | 2022_13_01__13_11_42 | > New client
+gongrok | 2022_13_01__13_11_42 | > Start server
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:42+0200 lvl=info msg="no configuration paths supplied"
+t=2022-01-13T13:11:42+0200 lvl=info msg="using configuration at default config path" path=/home/muhammad/.ngrok2/ngrok.yml
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:42+0200 lvl=info msg="open config file" path=/home/muhammad/.ngrok2/ngrok.yml err=nil
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:42+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+gongrok | 2022_13_01__13_11_42 | > server client ready
+gongrok | 2022_13_01__13_11_42 | > Add tunnel
+gongrok | 2022_13_01__13_11_42 | > Connecting
+gongrok | 2022_13_01__13_11_42 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_11_42 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:43+0200 lvl=info msg=start pg=/api/tunnels id=f4023a11334251bb
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:43+0200 lvl=warn msg="ngrok is not yet ready to start tunnels" pg=/api/tunnels id=f4023a11334251bb err="a successful ngrok tunnel session has not yet been established"
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:43+0200 lvl=info msg=end pg=/api/tunnels id=f4023a11334251bb status=503 dur=753.661µs
+gongrok | 2022_13_01__13_11_42 | > failed to init tunnel: HiddenEye | addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > error api: {"error_code":104,"status_code":503,"msg":"ngrok is not yet ready to start tunnels","details":{"err":"a successful ngrok tunnel session has not yet been established"}}
+
+gongrok | 2022_13_01__13_11_42 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_11_42 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:44+0200 lvl=info msg=start pg=/api/tunnels id=28cadea643199501
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:44+0200 lvl=warn msg="ngrok is not yet ready to start tunnels" pg=/api/tunnels id=28cadea643199501 err="a successful ngrok tunnel session has not yet been established"
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:44+0200 lvl=info msg=end pg=/api/tunnels id=28cadea643199501 status=503 dur=556.762µs
+gongrok | 2022_13_01__13_11_42 | > failed to init tunnel: HiddenEye | addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > error api: {"error_code":104,"status_code":503,"msg":"ngrok is not yet ready to start tunnels","details":{"err":"a successful ngrok tunnel session has not yet been established"}}
+
+gongrok | 2022_13_01__13_11_42 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_11_42 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:45+0200 lvl=info msg=start pg=/api/tunnels id=68abca5630d26d19
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:45+0200 lvl=warn msg="ngrok is not yet ready to start tunnels" pg=/api/tunnels id=68abca5630d26d19 err="a successful ngrok tunnel session has not yet been established"
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:45+0200 lvl=info msg=end pg=/api/tunnels id=68abca5630d26d19 status=503 dur=498.522µs
+gongrok | 2022_13_01__13_11_42 | > failed to init tunnel: HiddenEye | addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > error api: {"error_code":104,"status_code":503,"msg":"ngrok is not yet ready to start tunnels","details":{"err":"a successful ngrok tunnel session has not yet been established"}}
+
+gongrok | 2022_13_01__13_11_42 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_11_42 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:46+0200 lvl=info msg=start pg=/api/tunnels id=4855656be60dc4f1
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:46+0200 lvl=warn msg="ngrok is not yet ready to start tunnels" pg=/api/tunnels id=4855656be60dc4f1 err="a successful ngrok tunnel session has not yet been established"
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:46+0200 lvl=info msg=end pg=/api/tunnels id=4855656be60dc4f1 status=503 dur=365.751µs
+gongrok | 2022_13_01__13_11_42 | > failed to init tunnel: HiddenEye | addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > error api: {"error_code":104,"status_code":503,"msg":"ngrok is not yet ready to start tunnels","details":{"err":"a successful ngrok tunnel session has not yet been established"}}
+
+gongrok | 2022_13_01__13_11_42 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_11_42 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:47+0200 lvl=info msg=start pg=/api/tunnels id=4add81b94f3de960
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:47+0200 lvl=warn msg="ngrok is not yet ready to start tunnels" pg=/api/tunnels id=4add81b94f3de960 err="a successful ngrok tunnel session has not yet been established"
+t=2022-01-13T13:11:47+0200 lvl=info msg=end pg=/api/tunnels id=4add81
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: b94f3de960 status=503 dur=487.124µs
+gongrok | 2022_13_01__13_11_42 | > failed to init tunnel: HiddenEye | addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > error api: {"error_code":104,"status_code":503,"msg":"ngrok is not yet ready to start tunnels","details":{"err":"a successful ngrok tunnel session has not yet been established"}}
+
+gongrok | 2022_13_01__13_11_42 | > Attempting to initialize tunnel...
+gongrok | 2022_13_01__13_11_42 | > >>>	Name: HiddenEye | Addr: localhost:1234
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:48+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-01-13T13:11:48+0200 lvl=info msg="client session established" obj=csess id=e205aacad910
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:48+0200 lvl=info msg=start pg=/api/tunnels id=57bbdb1a38401c28
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:50+0200 lvl=info msg="started tunnel" obj=tunnels name=HiddenEye addr=http://localhost:1234 url=https://b603-212-175-150-127.ngrok.io
+gongrok | 2022_13_01__13_11_42 | > NGROK LOG: t=2022-01-13T13:11:50+0200 lvl=info msg=end pg=/api/tunnels id=57bbdb1a38401c28 status=201 dur=1.268376609s
+gongrok | 2022_13_01__13_11_42 | > Tunnel Created...
+gongrok | 2022_13_01__13_11_42 | > >>> Name: HiddenEye | Public Addr: https://b603-212-175-150-127.ngrok.io
+gongrok | 2022_13_01__13_11_42 | > CLIENT CONNECTED: &{ID:c8d3dc8b-1204-4763-83ab-c68691ced07d Options:0xc000180660 Tunnels:[0xc000180600] NGROKLocalAddr:127.0.0.1:4040 LogAPI:true cmds:[] runningCMDS:0xc0001c2840}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v3.3.10-dev
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+gongrok | 2022_13_01__13_11_42 | > listen tcp: address tcp/dasfgbh: unknown port
