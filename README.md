@@ -20,3 +20,13 @@ RESPONSIBILITY of the END-USER**. Developers assume NO liability and are NOT
 responsible for any misuse or damage caused by this program. Also we inform you
 that some of your your actions may be **ILLEGAL** and you **CAN NOT** use this
 software to test person or company without **WRITTEN PERMISSION** from them.
+
+
+## Installation
+Instructions on how to install *HiddenEye*
+```bash
+git clone https://github.com/muhammadqazi/Hidden-Eye.git
+cd Hidden-Eye
+go build
+./HiddenEye
+```
