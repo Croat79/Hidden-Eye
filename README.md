@@ -26,7 +26,13 @@ software to test person or company without **WRITTEN PERMISSION** from them.
 Instructions on how to install *HiddenEye*
 ```bash
 git clone https://github.com/muhammadqazi/Hidden-Eye.git
+```
+```bash
 cd Hidden-Eye
+```
+```bash
 go build
+```
+```bash
 ./HiddenEye
 ```
