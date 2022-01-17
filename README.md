@@ -26,13 +26,13 @@ software to test person or company without **WRITTEN PERMISSION** from them.
 Instructions on how to install *HiddenEye*
 ```bash
 git clone https://github.com/muhammadqazi/Hidden-Eye.git
-```
-```bash
 cd Hidden-Eye
-```
-```bash
 go build
-```
-```bash
 ./HiddenEye
 ```
+
+## Ngrok Setup
+
+Make a folder named **ngrok_bin** in the project directory , download ngrok binary file from https://dashboard.ngrok.com/get-started/setup, and place that file in the folder that you just created i.e, **ngrok_bin**
+
+
